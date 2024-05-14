@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Notes App</h1>
+        </div>
+        <div class="navtools">
+            <ul>
+                 <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="#">Quest A/c</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <form method="post" action="login" >
+            <h3>Login Account</h3>
+            <p>Thanks For Coming</p>
+            {{#if msg}}
+            <h5 class="{{red}}">{{msg}}</h5>
+            {{/if}}
+            <div class="data_group">
+               <input type="email" placeholder="E-Mail" name="email">
+            </div>
+            <div class="data_group">
+               <input type="password" placeholder="password"  name="password">
+            </div>
+            <div class="data_group2">
+               <a href="register.html">don`t have Account , Register</a>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
